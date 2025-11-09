@@ -7,7 +7,7 @@ public class NumWords {
 		int tens = num%100/10;
 		int units = num %10;
 		
-		System.err.println("hundreds: " + hundreds);
+		System.err.println("hundreds: " + hundreds); // wrong function
 		System.err.println("tens: " + tens);
 		System.err.println("units: " + units);
 	}
