@@ -1,3 +1,11 @@
+/*  the spacing around the if - else is very messy. thats how it should look:
+if () {
+	} else {
+		}
+
+it is very important to add those spacing separations to improve code readability 
+Think about how we could improve the way we calculate the middle? */
+
 // Generates three integer random numbers in a given range,
 // and prints them in increasing order.
 public class Ascend {
@@ -10,7 +18,7 @@ public class Ascend {
 		int num2 =(int)(Math.random() * (maxRange - minRange + 1)) + minRange;
 		int num3 = (int)(Math.random() * (maxRange - minRange + 1)) + minRange;
 
-		System.err.println("The first random number: " + num1);
+		System.err.println("The first random number: " + num1); // System.out.println should be used instead!
 		System.err.println("The second random number: "+ num2) ;
 		System.err.println("The third random number: "+ num3);
 
@@ -23,7 +31,7 @@ public class Ascend {
 			if(num2 <= num3){
 				middle = num2;
 				biggest = num3;
-			}else{
+			}else{  
 				middle = num3;
 				biggest = num2;
 			}
@@ -54,3 +62,4 @@ public class Ascend {
 		System.err.println("The biggest number is: " + biggest);
 	}
 }
+
